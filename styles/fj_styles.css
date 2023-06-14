@@ -24,11 +24,64 @@
     max-height: 350px;
 }
 
-.card .imageCenter{
+.imageCenter{
     text-align: center;
     width: 100%;
+}
+
+.imageCenter:hover{
+    cursor: pointer;
+}
+
+.card a{
+    color: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    text-decoration: inherit;
 }
 
 html{
     background-color: rgb(185, 206, 155);
 }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+    height:100%;
+  }
+
+  .modal-content img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
