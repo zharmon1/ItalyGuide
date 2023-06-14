@@ -1,0 +1,33 @@
+#cards{
+    width: 100%;
+    padding: 1%;
+    display: grid;
+    grid-template-columns:  49.5% 49.5%;
+    column-gap: 1%;
+    row-gap: 20px;
+    float: left;
+    overflow-x: hidden;
+}
+
+.card{
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 4%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(239, 242, 245);
+}
+
+.card img {
+    max-width: 240px;
+}
+
+.card .imageCenter{
+    text-align: center;
+    width: 100%;
+}
+
+html{
+    background-color: rgb(185, 206, 155);
+}
