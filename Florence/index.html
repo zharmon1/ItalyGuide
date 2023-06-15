@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Florence</title>
     <link rel="stylesheet" href="../styles/main_styles.css">
+    <link rel="stylesheet" href="../styles/fl_styles.css">
+    <link rel="icon" type="image/x-icon" href="../images/italy.ico">
+
 </head>
 
 <body>
@@ -40,6 +43,124 @@
 
     <main>
 
+        <nav class="workToggle">
+            <button id="DiscPostButton">A Work That Stood Out</button>
+            <button id="PoemButton">An Ode to Florentine Roofs</button>
+        </nav>
+
+        <article id="Disc_Post">
+
+
+            <figure>
+                <img src="../images/Giovanni Maria Butteri’s “Coronation of the Virgin”.jpg"
+                    alt="Giovanni Maria Butteri’s “Coronation of the Virgin”">
+                <figcaption>Giovanni Maria Butteri’s “Coronation of the Virgin”</figcaption>
+            </figure>
+
+            <section>
+                <h4 class="question">Identify a work or art and craft a post that describes all that you know about the
+                    subject.
+                </h4>
+
+                <p class="answer">Giovanni Maria Butteri’s “Coronation of the Virgin” was a work of art that stood out
+                    to
+                    me. It hangs in the sacistry of the Basilica di Santo Spirito alongside Michelangelo’s Crucifix. It
+                    stood out to me because this seemingly typical painting was placed with many extremely important
+                    artifacts yet it was unnamed in the basilica. In fact, the painting was only restored in November
+                    2022
+                    and as far as I can find, has no formal title. So it stood out to me that this painting would be
+                    with
+                    Michelangelo’s Crucifix and bones of saints, so I took a closer look. I noticed that there are many
+                    small details that all are nothing at first glance, however, they are all important ideas in
+                    Christian
+                    lifestyles. For starters, the obvious pick is God is depicted with a book with an Alpha and Omega in
+                    it,
+                    referring to Him calling Himself the Alpha and Omega in the book of Revelation. Next, Jesus and God
+                    are
+                    depicted on the same level, showing that they are one and the same. Another point is that the dove
+                    which
+                    symbolizes salvation, peace, and overall goodness is seen above Mary as she is crowned showing us
+                    that
+                    these things are true of those in heaven. The final detail is easily overlooked and even often
+                    cropped
+                    out of online pictures. At the bottom of the painting there are two women. One is picking up a cross
+                    and
+                    one is kneeling over a vase. This depicts a divide in humanity as the girl with the cross is
+                    visually
+                    performing the Christian act of “picking up your cross” and following Jesus as well as wearing a
+                    crown
+                    of thorns like Him and she is even shown to be looking up at Him. The girl with the vase seems to be
+                    showing the more materialistic side of humanity which is obsessed with “desires of the flesh” and
+                    she is
+                    shown to be looking away from God. In total these details of this one innocent painting convey the
+                    basic
+                    beliefs of Christianity as a whole, and these are just the ones I saw and that really stood out to
+                    me. I
+                    believe this says a lot about Florence and the Florentine culture because if you look closely enough
+                    at
+                    every small detail you find, it is likely that you will be able to find the Christian influence that
+                    shaped the city. </p>
+            </section>
+
+            <div class="centered">
+                <p class="context">This was the question and answer for a discusion board for May 24, 2023. The
+                    discusion
+                    title was "What aspect of Florence have really piqued your curiosity?" I chose this discusion
+                    because it
+                    is over a work of art that I saw that seemed to have a ton of hidden meaning. Despite this, there
+                    are
+                    not many people who have discussed it online, and it was actually difficult to find without knowing
+                    the
+                    title and only the painter. This caused me to be very interested in it, so I wrote about it on this
+                    discussion post.</p>
+            </div>
+
+
+        </article>
+
+        <article id="Poem">
+
+            <figure>
+                <img src="../images/RedRoofs.jpg" alt="Red Roofs of Florence">
+                <figcaption>Red Roofs of Florence</figcaption>
+            </figure>
+
+            <section>
+                <div class="centerText">
+                    <h4 class="question"><i>Florentine Roofs</i> by Zach Harmon</h4>
+                </div>
+
+                <div class="poem">
+                    <p class="line">Glistening in the sun you sit still as could be.</p>
+                    <p class="line">Atop the bustling streets, oddly it's you that is often overlooked.</p>
+                    <p class="line">They say you are for their protection, but I know you are much more.</p>
+                    <p class="line">When I look across the city, you are the first thing that I see.</p>
+                    <p class="line">Your red clay tiles are nothing short of historied.</p>
+                    <br>
+                    <p class="line">For years you’ve sat never-changing.</p>
+                    <p class="line">While the world around you does nothing but.</p>
+                    <p class="line">You are testament to your time</p>
+                    <p class="line">Through years of rain and thunder banging,</p>
+                    <p class="line">you’ve protected every man, woman, and mutt.</p>
+                    <br>
+                    <p class="line">Each night I step to the balcony and see you.</p>
+                    <p class="line">Encapsulated by your beauty, I stare.</p>
+                    <p class="line">You are a keeper of history and our protector at once.</p>
+                    <p class="line">To you, we have so many debts due.</p>
+                    <p class="line">Oh, Florentine roofs, to you there is nothing to compare.</p>
+                </div>
+            </section>
+
+            <div class="centered">
+                <p class="context">This poem was written for the first project, which was to bring attention to
+                    something that you've noticed in Florence that is abstract or may be overlooked. I decided to write
+                    about the beautiful red roofs that span the city. Sure, you may notice them at first, but over time
+                    you begin to overlook them and take them for granted. So, this ode is for them. All of the red roofs
+                    that have beared the weather for us and have kept us safe.</p>
+            </div>
+
+        </article>
+
 
     </main>
 
@@ -57,6 +178,34 @@
     </footer>
 
     <script src="../scripts/sticky-header.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", (e) => {
+            let button1 = document.getElementById("DiscPostButton");
+            let button2 = document.getElementById("PoemButton");
+            let work1 = document.getElementById("Disc_Post");
+            let work2 = document.getElementById("Poem");
+
+            button1.addEventListener("click", (e) => {
+                work1.style.display = "grid";
+                work2.style.display = "none";
+                button1.style.backgroundColor = "rgb(91, 119, 53)";
+                button1.style.color = "rgb(239, 242, 245)";
+                button2.style.backgroundColor = "rgb(239, 242, 245)";
+                button2.style.color = "black";
+            });
+
+            button2.addEventListener("click", (e) => {
+                work2.style.display = "grid";
+                work1.style.display = "none";
+                button2.style.backgroundColor = "rgb(91, 119, 53)";
+                button2.style.color = "rgb(239, 242, 245)";
+                button1.style.backgroundColor = "rgb(239, 242, 245)";
+                button1.style.color = "black";
+            });
+            button1.click();
+        });
+    </script>
 </body>
 
 </html>

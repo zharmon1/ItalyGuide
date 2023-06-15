@@ -1,0 +1,102 @@
+:root
+{
+    --header-height: 100px;
+    --size-1: 2px;
+    --size-2: 4px;
+    --size-3: 8px;
+    --size-4: 16px;
+    --size-5: 24px;
+    --size-6: 36px;
+    --size-7: 48px;
+    --size-8: 96px;
+    --row-height: 700px;
+    --primary: rgb(91, 119, 53);
+    --primary-light: rgb(111, 139, 72);
+    --primary-lighter: rgb(147, 173, 110);
+    --primary-lightest: rgb(185, 206, 155);
+    --off-white: rgb(239, 242, 245);
+    --dark-gray: rgb(46, 46, 48);
+}
+
+main{
+    width: 100%;
+    padding: 1%;
+    background-color: rgb(185, 206, 155);
+}
+
+.workToggle{
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+}
+
+.workToggle button {
+    flex: 1;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: var(--off-white);
+    font-size: larger;
+    min-height: 50px;
+    border-radius: 20px;
+}
+
+.workToggle button:hover{
+    cursor: pointer;
+}
+
+#Disc_Post{
+    width: 100%;
+    border: 8px solid rgb(91, 119, 53);
+    border-radius: 10px;
+    background-color: rgb(239, 242, 245);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding:1%;
+    display: grid;
+    grid-template-columns:  49.5% 49.5%;
+    column-gap: 1%;
+}
+
+#Disc_Post figure{
+    text-align: center;
+}
+
+#Disc_Post figure img{
+    max-width: 100%;
+}
+
+#Disc_Post .centered{
+    grid-column: span 2;
+    text-align: center;
+}
+
+#Poem{
+    width: 100%;
+    border: 8px solid rgb(91, 119, 53);
+    border-radius: 10px;
+    background-color: rgb(239, 242, 245);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding:1%;
+    display: grid;
+    grid-template-columns:  49.5% 49.5%;
+    column-gap: 1%;
+}
+
+#Poem figure{
+    text-align: center;
+}
+
+#Poem figure img{
+    max-width: 100%;
+}
+
+#Poem .centered{
+    grid-column: span 2;
+    text-align: center;
+}
+
+.centerText{
+    text-align: center;
+}
